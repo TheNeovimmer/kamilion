@@ -85,8 +85,8 @@ html:not(.dark) .hero-glow {
 .animate-marquee { display: flex; width: fit-content; animation: marquee 35s linear infinite; }
 
 .dynamic-island {
-  background: rgba(20, 18, 24, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(42, 40, 46, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
