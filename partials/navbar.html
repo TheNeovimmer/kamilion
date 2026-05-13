@@ -1,0 +1,69 @@
+<header class="fixed top-0 left-0 right-0 z-[100] flex justify-center p-6 pointer-events-none">
+  <nav class="dynamic-island animate-slide-down pointer-events-auto flex items-center gap-6 px-6 py-3 bg-surface-container-high/80 backdrop-blur-2xl rounded-full border border-white/10 shadow-2xl backdrop-saturate-150" id="main-nav" style="background:rgba(20,18,24,0.8)">
+    <a href="index.html" class="flex items-center mr-4 shrink-0">
+      <img src="logo.png" alt="KAMILION" class="h-8 md:h-10 w-auto hover:scale-110 transition-transform duration-300"/>
+    </a>
+    <div class="desktop-nav-links hidden lg:flex items-center space-x-6">
+      <a data-page="index.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="index.html">HOME</a>
+      <a data-page="about.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="about.html">ABOUT</a>
+      <a data-page="services.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="services.html">SERVICES</a>
+      <a data-page="portfolio.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="portfolio.html">PORTFOLIO</a>
+      <a data-page="process.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="process.html">PROCESS</a>
+      <a data-page="materials.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="materials.html">MATERIALS</a>
+      <a data-page="pricing.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="pricing.html">PRICING</a>
+      <a data-page="contact.html" class="nav-link font-display text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/70 font-medium hover:text-primary transition-colors" href="contact.html">CONTACT</a>
+    </div>
+    <div class="flex items-center gap-3 ml-auto">
+      <div class="theme-toggle-btn" role="button" aria-label="Toggle dark mode" tabindex="0">
+        <div class="theme-toggle-track">
+          <span class="theme-toggle-label theme-toggle-label-light">LIGHT</span>
+          <span class="theme-toggle-label theme-toggle-label-dark">DARK</span>
+        </div>
+        <div class="theme-toggle-thumb">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2m0 16v2m-10-10H2m20 0h-2m-2.93-5.07l-1.41 1.41M7.34 16.66l-1.41 1.41M16.66 7.34l1.41-1.41M7.34 7.34L5.93 5.93"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+          </svg>
+        </div>
+      </div>
+      <button class="material-symbols-outlined text-on-surface-variant hover:text-primary p-1 hover:scale-125 transition-all text-xl hidden sm:block">person</button>
+      <a href="contact.html" class="bg-primary text-on-primary font-display px-5 py-2 rounded-full text-[10px] tracking-widest btn-hover-effect hidden sm:inline-block">
+        CREATE ORDER
+      </a>
+      <button class="mobile-menu-open material-symbols-outlined text-on-surface-variant hover:text-primary text-2xl p-1 transition-all cursor-pointer" style="display:none">menu</button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu-overlay">
+  <button class="mobile-menu-close absolute top-8 right-8 material-symbols-outlined text-on-surface-variant hover:text-primary text-3xl transition-all cursor-pointer" style="background:none;border:none">close</button>
+  <a data-page="index.html" href="index.html">HOME</a>
+  <a data-page="about.html" href="about.html">ABOUT</a>
+  <a data-page="services.html" href="services.html">SERVICES</a>
+  <a data-page="portfolio.html" href="portfolio.html">PORTFOLIO</a>
+  <a data-page="process.html" href="process.html">PROCESS</a>
+  <a data-page="materials.html" href="materials.html">MATERIALS</a>
+  <a data-page="pricing.html" href="pricing.html">PRICING</a>
+  <a data-page="contact.html" href="contact.html">CONTACT</a>
+  <div class="flex items-center gap-4 mt-8">
+    <div class="theme-toggle-btn" role="button" aria-label="Toggle dark mode" tabindex="0" style="width:60px;height:30px">
+      <div class="theme-toggle-track">
+        <span class="theme-toggle-label theme-toggle-label-light">LIGHT</span>
+        <span class="theme-toggle-label theme-toggle-label-dark">DARK</span>
+      </div>
+      <div class="theme-toggle-thumb" style="width:24px;height:24px;top:2px;left:2px">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2m0 16v2m-10-10H2m20 0h-2m-2.93-5.07l-1.41 1.41M7.34 16.66l-1.41 1.41M16.66 7.34l1.41-1.41M7.34 7.34L5.93 5.93"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+        </svg>
+      </div>
+    </div>
+    <span class="font-display text-xs tracking-[0.2em] uppercase text-on-surface-variant/60">THEME</span>
+  </div>
+</div>
