@@ -8,4 +8,6 @@
   <url><loc>https://kamilion.xyz/process.html</loc><priority>0.7</priority></url>
   <url><loc>https://kamilion.xyz/pricing.html</loc><priority>0.7</priority></url>
   <url><loc>https://kamilion.xyz/contact.html</loc><priority>0.6</priority></url>
+  <url><loc>https://kamilion.xyz/login.html</loc><priority>0.5</priority></url>
+  <url><loc>https://kamilion.xyz/register.html</loc><priority>0.5</priority></url>
 </urlset>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KAMILION | Sign In</title>
+<meta name="description" content="Sign in to your KAMILION account to manage orders, upload models, and track fabrication projects."/>
+<meta property="og:title" content="KAMILION | Sign In"/>
+<meta property="og:description" content="Access your KAMILION fabrication dashboard."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://kamilion.xyz/login.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://kamilion.xyz/login.html"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="icon" type="image/png" href="logo.png"/>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary overflow-x-hidden min-h-screen flex flex-col">
+<div id="navbar"></div>
+<main class="flex-1 flex items-center justify-center px-4 py-32">
+<div class="w-full max-w-md mx-auto">
+<div class="text-center mb-10 reveal">
+<h1 class="font-display text-5xl md:text-6xl uppercase tracking-tighter mb-4">Welcome <span class="text-primary italic">Back</span></h1>
+<p class="text-on-surface-variant font-light">Sign in to your fabrication dashboard</p>
+</div>
+<div class="glass-card rounded-3xl p-8 md:p-10 reveal">
+<form class="space-y-6" id="login-form">
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="email">Email Address</label>
+<input class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface placeholder-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all" id="email" type="email" placeholder="YOU@EXAMPLE.COM" required/>
+</div>
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="password">Password</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface placeholder-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all pr-12" id="password" type="password" placeholder="******" required/>
+<button type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50 hover:text-primary transition-colors material-symbols-outlined text-lg toggle-pwd">visibility_off</button>
+</div>
+</div>
+<div class="flex justify-end">
+<a href="#" class="text-[10px] font-display tracking-[0.2em] uppercase text-primary hover:brightness-125 transition-all">Forgot Password?</a>
+</div>
+<button class="w-full bg-primary text-on-primary font-display text-sm tracking-[0.2em] uppercase px-10 py-5 rounded-full hover:shadow-[0_0_30px_rgba(207,188,255,0.4)] hover:scale-[1.02] active:scale-95 transition-all duration-300 btn-hover-effect flex items-center justify-center gap-3" id="login-btn" type="submit">
+    SIGN IN
+    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</form>
+<div class="mt-8 pt-8 border-t border-white/5 text-center">
+<p class="text-sm text-on-surface-variant font-light">Don't have an account?</p>
+<a href="register.html" class="font-display text-sm tracking-[0.2em] uppercase text-primary hover:brightness-125 transition-all mt-2 inline-block">Create Account</a>
+</div>
+</div>
+</div>
+</main>
+<div id="footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+</body></html>
