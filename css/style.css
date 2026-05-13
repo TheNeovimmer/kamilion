@@ -84,7 +84,11 @@ html:not(.dark) .hero-glow {
 }
 .animate-marquee { display: flex; width: fit-content; animation: marquee 35s linear infinite; }
 
-.dynamic-island { transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+.dynamic-island {
+  background: rgba(20, 18, 24, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 @keyframes slideInDown {
   from { transform: translateY(-100%); opacity: 0; }
@@ -471,12 +475,12 @@ html:not(.dark) body {
 }
 
 html:not(.dark) .dynamic-island {
-  background: rgba(255, 255, 255, 0.9) !important;
-  border-color: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(245, 240, 248, 0.92) !important;
+  border-color: rgba(103, 80, 164, 0.15) !important;
 }
 
 html:not(.dark) .dynamic-island .nav-link {
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(73, 69, 79, 0.8) !important;
 }
 
 html:not(.dark) .dynamic-island .nav-link:hover,
