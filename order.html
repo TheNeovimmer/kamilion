@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KAMILION | Start Your Order</title>
+<meta name="description" content="Upload your 3D model and configure your precision fabrication order. Select materials, technology, and quantity for a custom quote."/>
+<meta property="og:title" content="KAMILION | Start Your Order"/>
+<meta property="og:description" content="Configure and submit your precision fabrication order."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://kamilion.xyz/order.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://kamilion.xyz/order.html"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="icon" type="image/png" href="logo.png"/>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<div id="navbar"></div>
+<main class="pt-48 pb-24 px-6 md:px-12 max-w-5xl mx-auto">
+<section class="text-center mb-16 reveal">
+<div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-4 py-1 rounded-full text-primary font-display text-sm uppercase tracking-widest mb-8">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1;">add_shopping_cart</span>
+    New Fabrication Order
+</div>
+<h1 class="font-display text-6xl md:text-8xl leading-[0.85] tracking-tighter text-on-surface uppercase mb-6 parallax-scroll" data-speed="0.12">
+    Start Your<br/><span class="text-primary italic">Order</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto font-light">Upload your model, select materials, and get a precision quote. Our engineering team will review and respond within 24 hours.</p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+<section class="lg:col-span-2 reveal">
+<div class="glass-card rounded-3xl p-8 md:p-10">
+<h2 class="font-display text-2xl uppercase mb-8 tracking-tight">Order Details</h2>
+<form class="space-y-6" id="order-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="project-name">Project Name</label>
+<input class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface placeholder-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all" id="project-name" type="text" placeholder="MY TURBINE HOUSING" required/>
+</div>
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="material">Material</label>
+<select class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all appearance-none" id="material" style="background-image:url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23948e9c%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 1rem center;background-size:1.5rem">
+<option value="" disabled selected>SELECT MATERIAL</option>
+<option value="pla">Bio-Polymer PLA</option>
+<option value="premium-resin">Precision Resin</option>
+<option value="tough-resin">Tough Resin V2</option>
+<option value="crystal-clear">Crystal Clear</option>
+<option value="carbon-fiber">Carbon Fiber Nylon</option>
+<option value="bronze">Bronze-Infused Forge</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="technology">Technology</label>
+<select class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all appearance-none" id="technology" style="background-image:url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23948e9c%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 1rem center;background-size:1.5rem">
+<option value="" disabled selected>SELECT TECH</option>
+<option value="fdm">FDM - Fused Deposition</option>
+<option value="sla">SLA - Stereolithography</option>
+<option value="dlp">DLP - Digital Light Processing</option>
+<option value="polyjet">PolyJet - Multi-Material</option>
+</select>
+</div>
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="quantity">Quantity</label>
+<input class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface placeholder-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all" id="quantity" type="number" min="1" value="1" required/>
+</div>
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="deadline">Deadline</label>
+<select class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all appearance-none" id="deadline" style="background-image:url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23948e9c%22%3E%3Cpath%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 1rem center;background-size:1.5rem">
+<option value="" disabled selected>SELECT TIMEFRAME</option>
+<option value="express">Express - 24 Hours</option>
+<option value="standard">Standard - 72 Hours</option>
+<option value="economy">Economy - 5 Business Days</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2">File Upload</label>
+<div class="relative border-2 border-dashed border-white/10 rounded-xl p-8 text-center cursor-pointer hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group" id="drop-zone">
+<input class="absolute inset-0 opacity-0 cursor-pointer" id="file-input" type="file" accept=".stl,.obj,.step,.stp,.3mf,.fbx"/>
+<div id="upload-placeholder">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant/30 group-hover:text-primary/60 transition-colors mb-4 block">cloud_upload</span>
+<p class="text-sm text-on-surface-variant font-light">Drag &amp; drop your 3D model here, or <span class="text-primary font-medium">browse files</span></p>
+<p class="text-[10px] text-on-surface-variant/40 mt-2 tracking-widest uppercase">STL, OBJ, STEP, 3MF — Max 500MB</p>
+</div>
+<div class="hidden items-center gap-4 p-4 bg-primary/10 rounded-xl border border-primary/20" id="upload-success">
+<span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+<div class="flex-1 text-left">
+<p class="text-sm text-on-surface font-medium" id="file-name">file.stl</p>
+<div class="h-1 w-full bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-primary rounded-full w-full"></div>
+</div>
+</div>
+<button type="button" class="text-on-surface-variant hover:text-error transition-colors material-symbols-outlined text-lg" id="remove-file">close</button>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-[10px] font-display uppercase tracking-[0.2em] text-on-surface-variant mb-2" for="notes">Notes &amp; Requirements</label>
+<textarea class="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-sm text-on-surface placeholder-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all min-h-[140px]" id="notes" placeholder="DESCRIBE ANY SPECIAL REQUIREMENTS, SURFACE FINISH PREFERENCES, OR TOLERANCE SPECIFICATIONS..." rows="4"></textarea>
+</div>
+<div class="flex items-start gap-3">
+<input class="mt-1 rounded border-white/10 bg-surface-container-low text-primary focus:ring-primary/30 focus:border-primary/50" id="agree-terms" type="checkbox" required/>
+<label class="text-xs text-on-surface-variant font-light leading-relaxed" for="agree-terms">I agree to the <a href="#" class="text-primary hover:underline">Fabrication Terms</a> and confirm my model complies with the <a href="#" class="text-primary hover:underline">Upload Guidelines</a></label>
+</div>
+<button class="w-full bg-primary text-on-primary font-display text-sm tracking-[0.2em] uppercase px-10 py-5 rounded-full hover:shadow-[0_0_30px_rgba(207,188,255,0.4)] hover:scale-[1.02] active:scale-95 transition-all duration-300 btn-hover-effect flex items-center justify-center gap-3" id="order-btn" type="submit">
+    SUBMIT ORDER
+    <span class="material-symbols-outlined text-lg">rocket_launch</span>
+</button>
+</form>
+</div>
+</section>
+<aside class="space-y-6 reveal">
+<div class="glass-card rounded-3xl p-8">
+<h3 class="font-display text-lg uppercase mb-4 text-primary tracking-tight">Order Summary</h3>
+<div class="space-y-4 text-sm" id="order-summary">
+<div class="flex justify-between py-3 border-b border-white/5">
+<span class="text-on-surface-variant font-light">Material</span>
+<span class="text-on-surface font-display text-xs tracking-widest uppercase" id="summary-material">Not selected</span>
+</div>
+<div class="flex justify-between py-3 border-b border-white/5">
+<span class="text-on-surface-variant font-light">Technology</span>
+<span class="text-on-surface font-display text-xs tracking-widest uppercase" id="summary-tech">Not selected</span>
+</div>
+<div class="flex justify-between py-3 border-b border-white/5">
+<span class="text-on-surface-variant font-light">Quantity</span>
+<span class="text-on-surface font-medium" id="summary-qty">1</span>
+</div>
+<div class="flex justify-between py-3 border-b border-white/5">
+<span class="text-on-surface-variant font-light">Deadline</span>
+<span class="text-on-surface font-display text-xs tracking-widest uppercase" id="summary-deadline">Not selected</span>
+</div>
+<div class="flex justify-between py-3">
+<span class="text-on-surface-variant font-light">File</span>
+<span class="text-on-surface font-medium text-xs" id="summary-file">None</span>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-white/5 text-center">
+<p class="text-xs text-on-surface-variant font-light">Final pricing determined after engineering review</p>
+</div>
+</div>
+<div class="glass-card rounded-3xl p-8">
+<h3 class="font-display text-lg uppercase mb-4 text-primary tracking-tight">Need Help?</h3>
+<div class="space-y-4">
+<a href="contact.html" class="flex items-center gap-3 text-sm text-on-surface-variant hover:text-primary transition-colors group">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">forum</span>
+    Contact Engineering
+</a>
+<a href="mailto:hello@kamilion.xyz" class="flex items-center gap-3 text-sm text-on-surface-variant hover:text-primary transition-colors group">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">mail</span>
+    hello@kamilion.xyz
+</a>
+<a href="materials.html" class="flex items-center gap-3 text-sm text-on-surface-variant hover:text-primary transition-colors group">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">science</span>
+    View Materials
+</a>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<div id="footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function() {
+  var fileInput = document.getElementById('file-input');
+  var dropZone = document.getElementById('drop-zone');
+  var placeholder = document.getElementById('upload-placeholder');
+  var success = document.getElementById('upload-success');
+  var fileName = document.getElementById('file-name');
+  var removeBtn = document.getElementById('remove-file');
+  var summaryFile = document.getElementById('summary-file');
+
+  function handleFile(file) {
+    if (!file) return;
+    fileName.textContent = file.name;
+    placeholder.classList.add('hidden');
+    success.classList.remove('hidden');
+    success.classList.add('flex');
+    summaryFile.textContent = file.name;
+  }
+
+  function removeFile() {
+    fileInput.value = '';
+    placeholder.classList.remove('hidden');
+    success.classList.add('hidden');
+    success.classList.remove('flex');
+    summaryFile.textContent = 'None';
+  }
+
+  fileInput.addEventListener('change', function() {
+    handleFile(this.files[0]);
+  });
+
+  removeBtn.addEventListener('click', removeFile);
+
+  dropZone.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    this.classList.add('border-primary/50', 'bg-primary/10');
+  });
+  dropZone.addEventListener('dragleave', function() {
+    this.classList.remove('border-primary/50', 'bg-primary/10');
+  });
+  dropZone.addEventListener('drop', function(e) {
+    e.preventDefault();
+    this.classList.remove('border-primary/50', 'bg-primary/10');
+    if (e.dataTransfer.files.length) {
+      fileInput.files = e.dataTransfer.files;
+      handleFile(e.dataTransfer.files[0]);
+    }
+  });
+
+  function updateSummary() {
+    var m = document.getElementById('material');
+    var t = document.getElementById('technology');
+    var q = document.getElementById('quantity');
+    var d = document.getElementById('deadline');
+    document.getElementById('summary-material').textContent = m.options[m.selectedIndex] ? m.options[m.selectedIndex].text : 'Not selected';
+    document.getElementById('summary-tech').textContent = t.options[t.selectedIndex] ? t.options[t.selectedIndex].text : 'Not selected';
+    document.getElementById('summary-qty').textContent = q.value || '1';
+    document.getElementById('summary-deadline').textContent = d.options[d.selectedIndex] ? d.options[d.selectedIndex].text : 'Not selected';
+  }
+
+  document.getElementById('material').addEventListener('change', updateSummary);
+  document.getElementById('technology').addEventListener('change', updateSummary);
+  document.getElementById('quantity').addEventListener('input', updateSummary);
+  document.getElementById('deadline').addEventListener('change', updateSummary);
+
+  document.getElementById('order-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('order-btn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-lg" style="font-size:1.2rem">progress_activity</span> SUBMITTING...';
+    setTimeout(function() {
+      btn.innerHTML = '<span class="material-symbols-outlined text-lg" style="font-size:1.2rem">check_circle</span> ORDER SUBMITTED';
+      btn.classList.remove('btn-hover-effect');
+      btn.style.background = '#4caf50';
+      document.getElementById('order-form').querySelectorAll('input,select,textarea,button').forEach(function(el) { el.disabled = true; });
+    }, 2000);
+  });
+})();
+</script>
+</body></html>
