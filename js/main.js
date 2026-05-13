@@ -122,21 +122,6 @@
       });
     });
 
-    gsap.utils.toArray(".tilt-card").forEach(function (card) {
-      gsap.from(card, {
-        y: 80,
-        opacity: 0,
-        scale: 0.95,
-        duration: 1.0,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 85%",
-          toggleActions: "play none none reverse"
-        }
-      });
-    });
-
     gsap.utils.toArray(".reveal").forEach(function (el) {
       ScrollTrigger.create({
         trigger: el,
